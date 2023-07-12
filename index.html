@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+		<meta name='viewport' content='width=device-width'>
+		<link href='https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Montserrat&display=swap' rel='stylesheet'>
+		<style>
+			body {background: #f0ece3; font-family: Montserrat; text-align: center;}
+			h1, button {font-family: 'Alegreya Sans SC'; font-weight: 500;}
+			h1 {color: #c7b198;}
+			button {background: #f0ece3; color: #596e79; font-size: 19.2px;
+				width: 240px; height: 60px; border: 0;
+				box-shadow: -3.6px -3.6px 6px #fffc, 3.6px 3.6px 6px #0003;
+				border-radius: 19.2px; cursor: pointer; transition: .1s ease-in-out;}
+			button:hover {opacity: .5;}
+			button:active {color: #c7b198; opacity: 1;
+				box-shadow: inset -2.4px -2.4px 4.8px #ffffff80,
+					inset 4.8px 4.8px 9.6px #0000001a;}
+			figure {line-height: 1.5; margin: 16px 150px;}
+			blockquote {background: #dfd3c3; width: fit-content;
+				padding: 16px; border-radius: 5px; margin: 5px auto;}
+			blockquote::before {content: open-quote;}
+			blockquote::after {content: close-quote;}
+			figcaption::before {content: '\2014'; margin-right: 5px;}
+			@media screen and (max-width: 1200px) {figure{ margin: 16px 100px;}}
+			@media screen and (max-width: 992px) {figure{ margin: 16px 60px;}}
+			@media screen and (max-width: 767px) {figure{ margin: 16px 30px;}}
+			@media screen and (max-width: 550px) {figure{ margin: 16px 10px;}}
+			</style>
+		<title>Quotes App</title>
+	</head>
+	<body>
+		<h1>Quote of the Day</h1>
+		<p>Press the button below to recieve a random quote!</p>
+		<button type='button' onclick='rqg()'>New Quote</button>
+		<figure id='f'></figure>
+		<script src='script.js'></script>
+	</body>
+</html>
